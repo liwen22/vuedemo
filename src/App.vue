@@ -1,29 +1,26 @@
-
 <template>
   <div id="app">
-  <img src="./assets/logo.png">
     <router-view/>
-    <first></first>
+<!--    <manage></manage>-->
   </div>
 </template>
 
 <script>
-  import First from "./components/views/First";
-
+  import manage from '@/page/manage'
   export default {
-    components:{
-      First,
+    components: {
+      manage,
     }
   }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
