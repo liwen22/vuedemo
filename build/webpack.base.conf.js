@@ -32,6 +32,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.less$/,
+        loader: 'less-loader', // compiles Less to CSS
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
