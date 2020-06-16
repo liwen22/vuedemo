@@ -4,7 +4,7 @@ import First from '@/components/views/First'
 import Second from '@/components/views/Second'
 import Login from '@/page/login'
 import manage from '@/page/manage'
-// import vueEdit from '@/page/vueEdit'
+import userList from '@/page/userList'
 
 Vue.use(Router)
 
@@ -22,7 +22,7 @@ export default new Router({
       children: [
         {
           path: '',
-          component: First,
+          component: Second,
           meta: [],
         },
         {
@@ -34,7 +34,8 @@ export default new Router({
           path: '/second',
           component: Second,
           meta: ['编辑', '文本编辑'],
-        }, {
+        },
+        {
           path: '/userList',
           component: userList,
           meta: ['数据管理', '用户列表'],
